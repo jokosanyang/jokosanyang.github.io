@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Basier';
+    src: url('assets/Basier-Circle-regular-webfont/basiercircle-regular-webfont.ttf');
+    }
+    
+body {
+    font-family: 'Basier', Courier;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}    
+
+.header {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.header__heading {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    color: white;
+    font-size: 6rem;
+}
+
+.header__gif {
+    /* max-width: 100vw;
+    height: 60vh; */
+}
+
+.about__heading {
+    font-size: 3rem;
+
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer__links li {
+    display: inline-block;
+    list-style: none;
+}
