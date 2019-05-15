@@ -108,9 +108,12 @@ body {
     color: white;
     font-size: 1.5rem;
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 10%;
     text-align: center;
+}
+
+.figure__emojis {
+    font-size: 3rem;
 }
 
 .projects__list > figure > figcaption {
