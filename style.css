@@ -64,8 +64,6 @@ body {
 }
 
 .projects {
-	grid-column: 1 / 7;
-	grid-row: 2 / 3;
 	border-top: 3px solid #3d5326;
 	padding: 2rem 0;
 }
@@ -87,8 +85,7 @@ body {
 }
 
 .figure__image {
-	height: 320px;
-	width: 420px;
+	width: 410px;
 }
 
 .figure__overlay {
@@ -126,8 +123,6 @@ body {
 }
 
 .footer {
-	grid-column: 1 / 7;
-	grid-row: 3 / 4;
 	text-align: center;
 	border-top: 3px solid #3d5326;
 	padding-top: 2rem;
@@ -164,5 +159,9 @@ body {
 
 	.about {
 		margin-left: 1rem;
-	}
+    }
+
+    .figure__image {
+        width: 420px;
+    }
 }
