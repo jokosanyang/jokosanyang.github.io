@@ -1,169 +1,168 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Basier';
-    src: url('assets/Basier-Circle-regular-webfont/basiercircle-regular-webfont.ttf');
-    }
-    
+	font-family: 'Basier';
+	src: url('assets/Basier-Circle-regular-webfont/basiercircle-regular-webfont.ttf');
+}
+
 body {
-    font-family: 'Basier', Courier;
-    padding: 2rem;
-}    
+	font-family: 'Basier', Courier;
+	padding: 2rem;
+}
 
 .header--container {
-    display: flex;
-    flex-flow: row wrap;
-    padding-bottom: 2rem;
+	display: flex;
+	flex-flow: row wrap;
+	padding-bottom: 2rem;
 }
 
 .header {
-    width: 100vw;
-    min-width: 58vw;
+	width: 100vw;
+	min-width: 58vw;
 }
 
 .header__gif {
-    width:100%;
+	width: 100%;
 }
 
 .about {
-    font-size: 1.2rem;
-    line-height: 1.5;
+	font-size: 1.2rem;
+	line-height: 1.5;
 }
 
 .about__heading {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 .about__subtitle {
-    color: #93AD4A;
-    font-weight: bold;
-    font-size: 1.3rem;
+	color: #93ad4a;
+	font-weight: bold;
+	font-size: 1.3rem;
 }
 
 .about__text--link {
-    color: #3D5326;
-    font-weight: bold;
+	color: #3d5326;
+	font-weight: bold;
 }
 
 .text--link {
-    text-decoration: none;
-    color: #3D5326;
-    font-weight: bold;
+	text-decoration: none;
+	color: #3d5326;
+	font-weight: bold;
 }
 
 .text--link:visited {
-    color: #3D5326;
+	color: #3d5326;
 }
 
 .text--link:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .projects {
-    grid-column: 1 / 7;
-    grid-row: 2 / 3;
-    border-top: 3px solid #3D5326;
-    padding: 2rem 0;
+	grid-column: 1 / 7;
+	grid-row: 2 / 3;
+	border-top: 3px solid #3d5326;
+	padding: 2rem 0;
 }
 
 .projects__heading {
-    font-size: 2rem;
-    padding-bottom: 1rem;
+	font-size: 2rem;
+	padding-bottom: 1rem;
 }
 
 .projects__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
 .projects__list > figure {
-    position: relative;
-    margin-bottom: 1rem;
+	position: relative;
+	margin-bottom: 1rem;
 }
 
 .figure__image {
-    height: 320px;
-    width: 420px;
+	height: 320px;
+	width: 420px;
 }
 
 .figure__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 92%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.2s ease-in-out;
-    background-color: #93AD4A;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 92%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+	background-color: #93ad4a;
 }
 
 .figure__overlay:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .figure__overlay--text {
-    color: white;
-    font-size: 1.3rem;
-    position: absolute;
-    text-anchor: start;
-    top: 25%;
-    text-align: center;
-    padding: 1rem;
+	color: white;
+	font-size: 1.3rem;
+	position: absolute;
+	text-anchor: start;
+	top: 25%;
+	text-align: center;
+	padding: 1rem;
 }
 
 .projects__list > figure > figcaption {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #3D5326;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #3d5326;
 }
 
 .footer {
-    grid-column: 1 / 7;
-    grid-row: 3 / 4;
-    text-align: center;
-    border-top: 3px solid #3D5326;
-    padding-top: 2rem;
-    font-size: 2rem;
+	grid-column: 1 / 7;
+	grid-row: 3 / 4;
+	text-align: center;
+	border-top: 3px solid #3d5326;
+	padding-top: 2rem;
+	font-size: 2rem;
 }
 
 .footer__links > li {
-    display: inline-block;
-    list-style: none;
+	display: inline-block;
+	list-style: none;
 }
 
 .footer__links > li > a {
-    text-decoration: none;
-    color: #93AD4A;
+	text-decoration: none;
+	color: #93ad4a;
 }
 
 .footer__links > li > a:visited {
-    color: #93AD4A;
+	color: #93ad4a;
 }
 
 .footer__links > li > a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {
-    .header--container {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
+	.header--container {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
 
-    .header {
-        width: unset;
-    }
-    
-    .about {
-        margin-left: 1rem;
-    }
+	.header {
+		width: unset;
+	}
 
+	.about {
+		margin-left: 1rem;
+	}
 }
