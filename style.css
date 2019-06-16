@@ -84,8 +84,12 @@ body {
 	margin-bottom: 1rem;
 }
 
+.figure {
+	width: 100vw;
+}
+
 .figure__image {
-	width: 410px;
+	width: 100%;
 }
 
 .figure__overlay {
@@ -159,7 +163,11 @@ body {
 
 	.about {
 		margin-left: 1rem;
-    }
+	}
+	
+	.figure {
+		width: unset;
+	}
 
     .figure__image {
         width: 420px;
