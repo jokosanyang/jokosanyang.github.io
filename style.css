@@ -76,7 +76,7 @@ body {
 .projects__list {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .projects__list > figure {
