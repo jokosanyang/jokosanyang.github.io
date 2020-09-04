@@ -20,8 +20,10 @@
 :root {
   --main-color: #d63d3d;
   --link-color: #325d67;
+  --background-color: rgba(255, 255, 255, 80%);
 
   --large-text: 2.5rem;
+  --bigger-text: 1.6rem;
   --medium-text: 1.4rem;
   --small-text: 1.2rem;
 }
@@ -32,8 +34,8 @@
 }
 
 body {
-  padding: 2rem;
   height: 100%;
+  padding: 2rem;
   background-image: url('assets/flower_bg4.svg');
   background-position: center;
   background-size: cover;
@@ -46,7 +48,7 @@ body {
 .main {
   max-width: 60ch;
   margin-top: 3rem;
-  background-color: rgba(255, 255, 255, 70%);
+  background-color: var(--background-color);
   line-height: 1.4;
 }
 
@@ -73,19 +75,22 @@ body {
 }
 
 .text__link {
-  color: var(--main-color);
   font-family: 'Public', Helvetica, sans-serif;
+  color: var(--main-color);
 }
 
 .footer {
-  border-top: 2px solid var(--link-color);
+  width: 100%;
+  max-width: 60ch;
   padding-top: 30px;
-  background-color: rgba(255, 255, 255, 70%);
+  border-top: 2px solid var(--link-color);
+  background-color: var(--background-color);
 }
 
 .footer__heading {
   font-family: 'Public', Helvetica, sans-serif;
-  font-size: var(--medium-text);
+  font-size: var(--bigger-text);
+  font-weight: bold;
   color: var(--main-color);
 }
 
@@ -103,5 +108,11 @@ body {
   text-decoration-color: var(--main-color);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
