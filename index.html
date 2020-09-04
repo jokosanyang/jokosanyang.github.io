@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Joko | Full-stack developer</title>
-    <link rel="icon" href="./assets/flower_icon.png" />
+    <title>Joko | Developer</title>
+    <link rel="icon" href="./assets/flower_favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
@@ -14,134 +14,84 @@
   </head>
 
   <body>
-    <div class="header--container">
-      <header class="header">
-        <img
-          class="header__gif"
-          alt="welcoming gif of Joko Sanyang smiling at the bottom of some steps"
-          src="assets/welcome.gif"
-        />
-      </header>
-      <section class="about">
-        <h1 class="about__heading">Joko Sanyang.</h1>
-        <h2>Pharmacist, dreamer and full-stack developer.</h2>
-        <br />
-        <p class="about__subtitle">Warning: asks a lot of questions</p>
+    <header class="header">
+      <img
+        class="header__gif"
+        alt="welcoming gif of Joko Sanyang smiling at the bottom of some steps"
+        src="assets/welcome.gif"
+      />
+    </header>
+    <main class="main">
+      <div>
+        <h1 class="main__heading">Joko Sanyang.</h1>
+        <p class="main__subheading">
+          Hi! I'm a software developer, based in London.
+        </p>
+      </div>
+
+      <div class="about">
+        <h3 class="about__subtitle">
+          Currently at:
+          <a
+            href="https://www.ticketmaster.co.uk/"
+            target="blank"
+            class="text__link"
+            >Ticketmaster
+            <span class="visually_hidden">(Opens in new tab)</span></a
+          >
+        </h3>
+        <p>
+          Serving up a performant, accessible experience to millions of users
+          across 24 markets.
+        </p>
+
+        <h3 class="about__subtitle">Warning: asks a lot of questions</h3>
         <p>
           My inquisitive nature means that I experience the world as an endless
           opportunity for learning.
         </p>
-        <br />
-        <p class="about__subtitle">
+
+        <h3 class="about__subtitle">
           Superpower: can hold a conversation with anyone
-        </p>
+        </h3>
         <p>
-          Before attending the
-          <a
-            class="about__text--link"
-            target="blank"
-            href="https://github.com/jokosanyang/Diary-of-a-FAC-student"
-            >Founders and Coders bootcamp</a
-          >, I worked as a community pharmacist. Giving over 200 flu
-          vaccinations a season gave me the ability to sit in a tiny room with
-          anyone and distract them from the fact that a needle is about to go
-          into their arm.
+          Before attending the Founders and Coders bootcamp , I worked as a
+          community pharmacist. Giving over 200 flu vaccinations a season gave
+          me the ability to sit in a tiny room with anyone and distract them
+          from the fact that a needle is about to go into their arm.
         </p>
-        <br />
-        <p class="about__subtitle">Seeking: balance</p>
+
+        <h3 class="about__subtitle">Seeking: balance</h3>
         <p>
           Outside work, I enjoy attending and mentoring at Codebar, consuming
           any and all media I can get my hands on, and crafting things out of
           yarn.
         </p>
-      </section>
-    </div>
-    <section class="projects">
-      <h2 class="projects__heading">Some projects I've worked on</h2>
-      <div class="projects__list">
-        <div class="projects__card">
-          <h3>Time to Fly</h3>
-          <p>
-            A app that takes your postcode and flight number and calculates what
-            time you need to leave for the airport.
-          </p>
-          <p class="projects__link">
-            <a
-              class="text--link"
-              href="https://github.com/jokosanyang/week5-timeToFly"
-              target="blank"
-              >Link to repo</a
-            >
-          </p>
-        </div>
-
-        <div class="projects__card">
-          <h3>Tinkl</h3>
-          <p>
-            A progressive web app to help you find the nearest suitable toilet
-            when you're out and about in London.
-          </p>
-          <p class="projects__link">
-            <a
-              class="text--link"
-              href="https://github.com/FAC-Sixteen/Tinkl"
-              target="blank"
-              >Link to repo</a
-            >
-          </p>
-        </div>
-
-        <div class="projects__card">
-          <h3>LSx Action Planner</h3>
-          <p>
-            A React web application built for supporters of the London
-            Sustainability Exchange.
-          </p>
-          <p class="projects__link">
-            <a
-              class="text--link"
-              href="https://github.com/FAC-Sixteen/lsx"
-              target="blank"
-              >Link to repo</a
-            >
-          </p>
-        </div>
-
-        <div class="projects__card">
-          <h3>Tic, Tac or Toe</h3>
-          <p>
-            A React quiz game to help you find out once and for all, if you're a
-            Tic, a Tac or a Toe.
-          </p>
-          <p class="projects__link">
-            <a
-              class="text--link"
-              href="https://github.com/jokosanyang/tictacortoe"
-              target="blank"
-              >Link to repo</a
-            >
-          </p>
-        </div>
       </div>
-    </section>
+    </main>
     <footer class="footer">
-      <h2 class="footer__heading">Get in touch!</h2>
+      <p class="footer__heading">Get in touch</p>
       <ul class="footer__links">
-        <!-- Probably will change to SVG icons -->
         <li>
-          <a href="mailto: hello@jokosanyang.com" target="blank">Email</a>
+          <a href="mailto: hello@jokosanyang.com" target="blank"
+            >Email <span class="visually_hidden">(Opens in new tab)</span></a
+          >
         </li>
         <li>
-          <a href="https://twitter.com/jokosanyang" target="blank">Twitter</a>
+          <a href="https://twitter.com/jokosanyang" target="blank"
+            >Twitter <span class="visually_hidden">(Opens in new tab)</span></a
+          >
         </li>
         <li>
-          <a href="https://github.com/jokosanyang" target="blank">GitHub</a>
+          <a href="https://github.com/jokosanyang" target="blank"
+            >GitHub <span class="visually_hidden">(Opens in new tab)</span></a
+          >
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/joko-sanyang-0a2257169/"
             target="blank"
-            >LinkedIn</a
+            >LinkedIn <span class="visually_hidden">(Opens in new tab)</span></a
           >
         </li>
       </ul>
