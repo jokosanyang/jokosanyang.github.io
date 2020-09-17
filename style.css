@@ -21,6 +21,7 @@
   --main-color: #d63d3d;
   --link-color: #325d67;
   --background-color: rgba(255, 255, 255, 80%);
+  --link-underline-color: rgba(214, 61, 61, 70%);
 
   --large-text: 2.5rem;
   --bigger-text: 1.6rem;
@@ -77,6 +78,14 @@ body {
 .text__link {
   font-family: 'Public', Helvetica, sans-serif;
   color: var(--main-color);
+  box-shadow: 0;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.text__link:hover,
+.text__link:focus {
+  box-shadow: inset 0 -0.75rem var(--link-underline-color);
+  outline: none;
 }
 
 .footer {
@@ -106,6 +115,14 @@ body {
   font-size: var(--medium-text);
   color: var(--link-color);
   text-decoration-color: var(--main-color);
+  box-shadow: 0;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.footer__links > li > a:hover,
+.footer__links > li > a:focus {
+  box-shadow: inset 0 -0.75rem var(--link-underline-color);
+  outline: none;
 }
 
 @media screen and (min-width: 700px) {
