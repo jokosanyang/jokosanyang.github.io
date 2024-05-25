@@ -44,7 +44,7 @@ body {
 
 .header__gif {
   width: 100%;
-  max-width: 100ch;
+  max-width: 60ch;
   height: auto;
   margin-top: 2rem;
 }
@@ -109,7 +109,6 @@ body {
   width: 100%;
   max-width: 60ch;
   padding-top: 30px;
-  /* border-top: 2px solid var(--link-color); */
   background-color: var(--background-color);
 }
 
@@ -148,7 +147,5 @@ body {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    /* align-items: center; */
-    /* text-align: center; */
   }
 }
